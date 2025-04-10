@@ -1,0 +1,14 @@
+[package]
+name = "rust-benchmark"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.79.0" # Required for unchecked operations
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "unchecked_bench"
+harness = false

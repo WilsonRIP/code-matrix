@@ -28,16 +28,35 @@ const resources: Resource[] = [
     id: "react-docs",
     title: "React Documentation",
     description:
-      "Official documentation for React, a JavaScript library for building user interfaces.",
+      "Official documentation for React 19, with comprehensive guides on all React features and concepts.",
     url: "https://react.dev/",
     category: "frameworks",
     tags: ["react", "javascript", "ui"],
   },
   {
+    id: "react-basics",
+    title: "React Quick Start Guide",
+    description:
+      "Learn the basics of React in this interactive guide covering 80% of React concepts you'll use daily.",
+    url: "https://react.dev/learn",
+    category: "frameworks",
+    tags: ["react", "beginners", "tutorial"],
+  },
+  {
+    id: "react-19",
+    title: "React 19: What's New",
+    description:
+      "Explore the latest features in React 19, including React Compiler, Server Components, and the Actions API.",
+    url: "https://dev.to/im_ashish30/react-19-everything-you-need-to-know-b0b",
+    category: "frameworks",
+    tags: ["react", "updates", "features"],
+  },
+  {
     id: "react-patterns",
-    title: "React Design Patterns",
-    description: "Common patterns and best practices for React development.",
-    url: "https://reactpatterns.com/",
+    title: "React Design Patterns 2025",
+    description:
+      "Modern React patterns and best practices for building maintainable applications.",
+    url: "https://www.robinwieruch.de/learning-react/",
     category: "frameworks",
     tags: ["react", "patterns", "architecture"],
   },
@@ -47,37 +66,75 @@ const resources: Resource[] = [
     id: "nextjs-docs",
     title: "Next.js Documentation",
     description:
-      "Official documentation for Next.js, the React framework for production.",
+      "Comprehensive guides for Next.js, covering both the App Router and Pages Router.",
     url: "https://nextjs.org/docs",
     category: "frameworks",
     tags: ["next.js", "react", "framework"],
   },
   {
+    id: "nextjs-app-router",
+    title: "Next.js App Router Guide",
+    description:
+      "Learn how to use the modern App Router in Next.js for better routing, layouts, and data fetching.",
+    url: "https://nextjs.org/docs/app",
+    category: "frameworks",
+    tags: ["next.js", "router", "guide"],
+  },
+  {
+    id: "nextjs-features",
+    title: "Next.js 14 Features",
+    description:
+      "Explore the latest features in Next.js 14, including Turbopack, Server Actions, and Partial Prerendering.",
+    url: "https://nextjs.org/blog/next-14",
+    category: "frameworks",
+    tags: ["next.js", "updates", "performance"],
+  },
+  {
     id: "nextjs-learn",
     title: "Next.js Learn Course",
-    description: "Interactive course to learn Next.js step-by-step.",
+    description:
+      "Free official course teaching App Router, authentication, databases, and more.",
     url: "https://nextjs.org/learn",
     category: "frameworks",
     tags: ["next.js", "tutorial", "course"],
   },
 
-  // CSS Resources
+  // Tailwind CSS Resources
   {
     id: "tailwind-docs",
-    title: "Tailwind CSS Documentation",
+    title: "Tailwind CSS 4 Documentation",
     description:
-      "Official documentation for Tailwind CSS, a utility-first CSS framework.",
+      "Official documentation for Tailwind CSS 4, covering utilities, customization, and best practices.",
     url: "https://tailwindcss.com/docs",
     category: "styling",
     tags: ["css", "tailwind", "styling"],
   },
   {
-    id: "shadcn-ui",
-    title: "shadcn/ui Components",
-    description: "Re-usable components built using Radix UI and Tailwind CSS.",
-    url: "https://ui.shadcn.com/",
+    id: "tailwind-components",
+    title: "Tailwind UI Components",
+    description:
+      "Ready-to-use components built with Tailwind CSS by the creators of Tailwind.",
+    url: "https://tailwindcss.com/",
     category: "styling",
     tags: ["ui", "components", "tailwind"],
+  },
+  {
+    id: "tailwind-nextjs",
+    title: "Next.js and Tailwind CSS Guide 2025",
+    description:
+      "Comprehensive guide on integrating Tailwind CSS with Next.js, including setup, best practices, and optimization.",
+    url: "https://dev.to/codeparrot/nextjs-and-tailwind-css-2025-guide-setup-tips-and-best-practices-2f6h",
+    category: "styling",
+    tags: ["tailwind", "next.js", "integration"],
+  },
+  {
+    id: "tailwind-best-practices",
+    title: "Tailwind CSS Best Practices 2025",
+    description:
+      "Modern best practices for scalable and maintainable Tailwind CSS projects.",
+    url: "https://www.bootstrapdash.com/blog/tailwind-css-best-practices",
+    category: "styling",
+    tags: ["tailwind", "best practices", "optimization"],
   },
 
   // TypeScript Resources
@@ -85,18 +142,37 @@ const resources: Resource[] = [
     id: "typescript-docs",
     title: "TypeScript Documentation",
     description:
-      "Official documentation for TypeScript, a typed superset of JavaScript.",
+      "Official TypeScript documentation with tutorials, references, and guides.",
     url: "https://www.typescriptlang.org/docs/",
     category: "typescript",
     tags: ["typescript", "javascript", "types"],
   },
   {
-    id: "typescript-handbook",
-    title: "TypeScript Handbook",
-    description: "Comprehensive guide to TypeScript features and syntax.",
-    url: "https://www.typescriptlang.org/docs/handbook/intro.html",
+    id: "typescript-best-practices",
+    title: "TypeScript Best Practices 2025",
+    description:
+      "Modern TypeScript best practices to elevate your code quality and maintainability.",
+    url: "https://dev.to/sovannaro/typescript-best-practices-2025-elevate-your-code-quality-1gh3",
     category: "typescript",
-    tags: ["typescript", "guide", "reference"],
+    tags: ["typescript", "best practices", "code quality"],
+  },
+  {
+    id: "typescript-pro-tips",
+    title: "TypeScript Pro Tips & Tricks 2025",
+    description:
+      "Advanced tips and techniques for mastering TypeScript in modern web development.",
+    url: "https://javascript.plainenglish.io/master-typescript-in-2025-top-pro-tips-tricks-for-smarter-coding-1946ff38dbbe",
+    category: "typescript",
+    tags: ["typescript", "advanced", "tips"],
+  },
+  {
+    id: "typescript-react",
+    title: "TypeScript with React Guide",
+    description:
+      "Learn how to effectively use TypeScript with React to build type-safe applications.",
+    url: "https://react.dev/learn/typescript",
+    category: "typescript",
+    tags: ["typescript", "react", "integration"],
   },
 
   // Tools Resources
@@ -104,7 +180,7 @@ const resources: Resource[] = [
     id: "vscode",
     title: "Visual Studio Code",
     description:
-      "Free source-code editor made by Microsoft for Windows, Linux and macOS.",
+      "The most popular code editor for web development with excellent TypeScript and React support.",
     url: "https://code.visualstudio.com/",
     category: "tools",
     tags: ["editor", "ide", "development"],
@@ -116,6 +192,24 @@ const resources: Resource[] = [
     url: "https://github.com/",
     category: "tools",
     tags: ["git", "version-control", "collaboration"],
+  },
+  {
+    id: "vercel",
+    title: "Vercel",
+    description:
+      "The platform for deploying Next.js applications with excellent performance and developer experience.",
+    url: "https://vercel.com/",
+    category: "tools",
+    tags: ["deployment", "hosting", "next.js"],
+  },
+  {
+    id: "figma",
+    title: "Figma",
+    description:
+      "Collaborative design tool that integrates well with modern web development workflows.",
+    url: "https://www.figma.com/",
+    category: "tools",
+    tags: ["design", "ui", "collaboration"],
   },
 ];
 
@@ -150,8 +244,8 @@ export default function ResourcesPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">Developer Resources</h1>
         <p className="text-xl max-w-2xl mx-auto">
-          Explore documentation, tools, and resources to help with your
-          development journey.
+          Explore the latest documentation, tools, and resources for modern web
+          development in 2025.
         </p>
       </div>
 
@@ -204,9 +298,9 @@ interface ResourceCardProps {
 
 function ResourceCard({ resource }: ResourceCardProps) {
   return (
-    <Card>
+    <Card className="h-full flex flex-col">
       <CardHeader>
-        <CardTitle>{resource.title}</CardTitle>
+        <CardTitle className="text-xl">{resource.title}</CardTitle>
         <CardDescription>
           <div className="flex flex-wrap gap-2 mt-2">
             {resource.tags.map((tag) => (
@@ -220,12 +314,12 @@ function ResourceCard({ resource }: ResourceCardProps) {
           </div>
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <p>{resource.description}</p>
+      <CardContent className="flex-grow">
+        <p className="text-sm">{resource.description}</p>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="mt-auto">
         <Button asChild className="w-full">
-          <Link href={resource.url} target="_blank">
+          <Link href={resource.url} target="_blank" rel="noopener noreferrer">
             Visit Resource
           </Link>
         </Button>
